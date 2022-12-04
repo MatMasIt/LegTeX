@@ -1,0 +1,77 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage{multicol}
+\usepackage{paracol}
+\usepackage{setspace}
+\usepackage[
+margin=2.6cm,
+top=3cm,        
+headsep=21pt,
+headheight=41pt,
+]{geometry}
+\usepackage{fancyhdr}
+\author{@SirFabio}
+\setlength{\columnseprule}{0.1mm}
+
+\pagestyle{fancy}
+\lhead{\emph{Atti Parlamentari}}
+\chead{– \thepage \ –}
+\rhead{\emph{Camera dei Deputati}}
+\cfoot{}
+\renewcommand{\headrule}{%
+  \vspace{-4pt}%
+  \makebox[\headwidth]{\hrulefill}%
+  \llap{\raisebox{0.5mm}{\makebox[\headwidth]{\hrulefill}}}\\
+  \makebox[\headwidth]{\footnotesize
+    {{LEG}} LEGISLATURA -- DISEGNI DI LEGGE E RELAZIONI -- DOCUMENTI}%
+  \llap{\raisebox{-6pt}{\makebox[\headwidth]{\hrulefill}}}
+}
+
+\newcommand\entry[1]{\par\vspace{#1}\ignorespaces}
+
+
+\begin{document}
+
+\begingroup
+\centering
+\vspace*{0.5cm}%
+\parbox[t]{10.25cm}{\vspace{0pt}%
+  \MakeUppercase{\Huge Camera Dei Deputati}\par} \parbox[t]{0pt}{\vspace{0pt}%
+  \clap{\footnotesize N. {{NLAW}}}
+  \par\clap{\rule[8pt]{4mm}{0.4pt}}%
+}
+
+\entry{6pt} \hspace{\fill}\makebox[3cm]{\hrulefill}\hspace{\fill}
+
+\entry{2cm}
+\textbf{\Large {{TIPO}}}
+\entry{0.9cm}
+\scriptsize{\scshape{{{INIZ}}}}\quad
+\entry{0.5cm}
+\normalsize{\bfseries{{{RELATORI}}}}\quad
+
+\entry{0pt} \hspace{\fill}\makebox[9mm]{\hrulefill}\hspace{\fill}
+
+\entry{1cm}
+{{TITOLO}}\quad
+
+\entry{1.5cm} \hspace{\fill}\makebox[22mm]{\hrulefill}\hspace{\fill}
+\entry{1.5mm}
+
+\scriptsize{\emph{Presentata {{DATA}}}}\quad
+\entry{0.5pt} \hspace{\fill}\makebox[22mm]{\hrulefill}\hspace{\fill}
+
+\vspace{\baselineskip}\par
+\endgroup
+
+\begin{multicols}{2}
+  \textsc{Onorevoli colleghi!} {{INTRO}}
+\end{multicols}
+
+
+
+{{ARTPAGE}}
+
+
+
+\end{document}
